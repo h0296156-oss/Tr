@@ -164,7 +164,7 @@ jobs:
       - name: Establish Tailscale Connection
         run: |
           & "$env:ProgramFiles\Tailscale\tailscale.exe" up `
-            --authkey=${{ secrets.KEY2y2 }} `
+            --authkey=${{ secrets.K }} `
             --hostname=gh-runner-$env:GITHUB_RUN_ID
 
           # Wait for IP
